@@ -1,0 +1,26 @@
+<!-- templates/home.html -->
+<html>
+<h1>CONTACT ME </h1>
+<table border="1" style="border: 1px solid black; border-collapse: collapse;">
+    <tr> <th>name</th> <th> city</th> <th>email</th><th>dob</th><th>address</th> </tr>
+    {% for post in dblist %}
+    <tr>
+        <td>
+            {{ post.name }}
+        </td>
+        <td>
+            {{ post.city }}
+        </td>
+        <td>
+            {{ post.email }}
+        </td>
+        <td>
+            {{ post.dob }}
+        <td>
+            {{ post.address }}
+        </td>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</html>
